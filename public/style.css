@@ -82,6 +82,7 @@ body {
   background: rgb(0, 59, 251);
   border-radius: 20px;
 }
+
 .form {
   width: 100%;
   display: flex;
@@ -91,12 +92,13 @@ body {
 .message__info {
   font-size: 18px;
   color: azure;
-  padding: 0 20px;
+  padding: 15px 20px;
   width: 80%;
   height: 60px;
   border-radius: 20px;
   border: none;
   background-color: #999;
+  resize: none;
 }
 .btn {
   width: 60px;

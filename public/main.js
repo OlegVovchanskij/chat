@@ -3,12 +3,16 @@ let color;
 let id;
 let userName;
 let avatarColor;
-const usernameRegex = /^[a-zA-Z0-9_.]/;
+const usernameRegex = /^[a-zA-ZА-Яа-я0-9_.]/;
 const validateUser = (userName) => {
   if (userName.match(usernameRegex)) {
     return true;
   }
 };
+$("#demo1").emojioneArea({
+  container: "#container",
+  hideSource: false,
+});
 $(".submitBtn").on("click", (e) => {
   e.preventDefault();
 
@@ -50,6 +54,7 @@ $("#form").submit(function () {
     });
 
     $("#message__info").val("");
+    console.log($("#message__info").val(""));
     return false;
   } else return false;
 });
